@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 800px;
+  margin-inline: auto;
+}
+.container {
+  background-color: oklch(0.9 0.05 200);
+  padding-inline: 20px;
+  margin-bottom: 40px;
+}
+.item {
+  border: 2px solid oklch(0.6 0.05 30);
+  background-color: oklch(0.9 0.05 30);
+  padding: 10px;
+}
+
+.h300 {
+  height: 300px;
+}
+
+.ac {
+  align-content: start;
+}
+
+.ai {
+  align-items: start;
+}
+
+.as-1 {
+  align-self: start;
+}
+.as-2 {
+  align-self: center;
+}
+.as-3 {
+  align-self: end;
+}
+.as-4 {
+  align-self: stretch;
+}
+.as-5 {
+  align-self: baseline;
+}
+.gap {
+  gap: 10px;
+}
+
+.jc {
+  justify-content: space-around;
+}
+
+.ji {
+  justify-items: start;
+}
+.green {
+  background-color: oklch(87.994% 0.09041 150.807);
+}
+
+.js-s {
+  justify-self: start;
+}
+.js-c {
+  justify-self: center;
+}
+.js-e {
+  justify-self: end;
+}
+.js-str {
+  justify-self: stretch;
+}
+
+.grid {
+  display: grid;
+}
+
+.gtc {
+  grid-template-columns: auto 1fr 2fr;
+}
+
+.gtc-1fr {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.gtc-100 {
+  grid-template-columns: repeat(5, 100px);
+}
+
+.gtr {
+  grid-template-rows: auto 1fr 2fr;
+}
+.gtr-1fr {
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.gc-gr {
+  grid-column: 2/4;
+  grid-row: 3/6;
+}
+
+.ga {
+  grid-area: 3/2/6/4;
+}
+
+.subgrid {
+  grid-area: 3/2/6/4;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+}
+
+.order-1 {
+  order: 1;
+}
+.order-2 {
+  order: 2;
+}
+.order-3 {
+  order: 3;
+}
+.order-4 {
+  order: 4;
+}
+.order-5 {
+  order: 5;
+}

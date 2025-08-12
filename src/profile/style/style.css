@@ -18,8 +18,8 @@
 .line {
   height: 2px;
   background-color: white;
-  width: 1500px;
-  margin: 0 auto;
+  width: 90%;
+  margin-inline: auto;
 }
 
 body {

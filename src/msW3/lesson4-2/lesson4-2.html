@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Flex</title>
+  </head>
+  <body>
+    <h1>Grid</h1>
+    <h2>No Grid</h2>
+    <div class="container">
+      <div class="item">item1</div>
+      <div class="item">item2</div>
+      <div class="item">item3</div>
+      <div class="item">item4</div>
+      <div class="item">item5</div>
+    </div>
+    <h2 class="purple">Default</h2>
+    <div class="container grid">
+      <div class="item">item1</div>
+      <div class="item">item2</div>
+      <div class="item">item3</div>
+      <div class="item">item4</div>
+      <div class="item">item5</div>
+    </div>
+    <h2 class="purple">grid-template-columns</h2>
+    <div class="container grid gtc">
+      <div class="item">item1</div>
+      <div class="item">item2</div>
+      <div class="item">item3</div>
+      <div class="item">item4</div>
+      <div class="item">item5</div>
+    </div>
+    <h2 class="purple">grid-template-rows</h2>
+    <div class="container grid gtr">
+      <div class="item">item1</div>
+      <div class="item">item2</div>
+      <div class="item">item3</div>
+      <div class="item">item4</div>
+      <div class="item">item5</div>
+    </div>
+    <h2 class="orange">order</h2>
+    <div class="container grid">
+      <div class="item order-2">order2</div>
+      <div class="item order-5">order5</div>
+      <div class="item order-4">order4</div>
+      <div class="item order-3">order3</div>
+      <div class="item order-1">order1</div>
+    </div>
+    <h2 class="purple">align-content</h2>
+    <div class="container grid gtc-1fr ac h300">
+      <div class="item">item1</div>
+      <div class="item">item2</div>
+      <div class="item">item3</div>
+      <div class="item">item4</div>
+      <div class="item">item5</div>
+    </div>
+    <h2 class="orange">align-self</h2>
+    <div class="container grid gtc-1fr h300">
+      <div class="item as-1">start</div>
+      <div class="item as-2">center</div>
+      <div class="item as-3">end</div>
+      <div class="item as-4">stretch</div>
+      <div class="item as-5">baseline</div>
+    </div>
+    <h2 class="purple">justify-content</h2>
+    <div class="container grid gtc-100 jc">
+      <div class="item w100">item1</div>
+      <div class="item w100">item2</div>
+      <div class="item w100">item3</div>
+      <div class="item w100">item4</div>
+      <div class="item w100">item5</div>
+    </div>
+    <h2 class="purple">align-items</h2>
+    <div class="container grid gtc-1fr ai h300">
+      <div class="item">item1</div>
+      <div class="item">item2</div>
+      <div class="item">item3</div>
+      <div class="item">item4</div>
+      <div class="item">item5</div>
+    </div>
+    <h2 class="purple">justify-items</h2>
+    <div class="container grid gtc-1fr ji">
+      <div class="item">item1</div>
+      <div class="item">item2</div>
+      <div class="item">item3</div>
+      <div class="item">item4</div>
+      <div class="item">item5</div>
+    </div>
+    <h2 class="orange">justify-self</h2>
+    <div class="container grid gtc-1fr">
+      <div class="item">item1</div>
+      <div class="item js-s">item2</div>
+      <div class="item js-c">item3</div>
+      <div class="item js-e">item4</div>
+      <div class="item js-str">item5</div>
+    </div>
+    <h2 class="purple">gap</h2>
+    <div class="container grid gtc-1fr gtr-1fr gap">
+      <div class="item">item1</div>
+      <div class="item">item2</div>
+      <div class="item">item3</div>
+      <div class="item">item4</div>
+      <div class="item">item5</div>
+    </div>
+    <h2 class="orange">grid-column/row</h2>
+    <div class="container grid gtc-1fr gtr-1fr">
+      <div class="item">item1</div>
+      <div class="item gc-gr green">item2</div>
+      <div class="item">item3</div>
+      <div class="item">item4</div>
+      <div class="item">item5</div>
+    </div>
+    <h2 class="orange">grid-area</h2>
+    <div class="container grid gtc-1fr gtr-1fr">
+      <div class="item">item1</div>
+      <div class="item ga green">item2</div>
+      <div class="item">item3</div>
+      <div class="item">item4</div>
+      <div class="item">item5</div>
+    </div>
+    <h2 class="orange">subgrid</h2>
+    <div class="container grid gtc-1fr gtr-1fr">
+      <div class="item">item1</div>
+      <div class="subgrid">
+        <div class="item green">item2</div>
+        <div class="item green">item3</div>
+        <div class="item green">item4</div>
+        <div class="item green">item5</div>
+        <div class="item green">item6</div>
+      </div>
+      <div class="item">item7</div>
+      <div class="item">item8</div>
+      <div class="item">item9</div>
+    </div>
+  </body>
+</html>

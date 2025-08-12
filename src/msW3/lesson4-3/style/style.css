@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  max-width: 1200px;
+}
+
+h1 {
+  text-align: center;
+  margin-block: 20px;
+}
+
+h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.section {
+  background-color: oklch(70% 0.1 200);
+  padding: 20px 20px 10px 20px;
+  margin-inline: 20px;
+}
+
+.container {
+  background-color: oklch(95% 0.05 150);
+  font-size: 18px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.item {
+  background-color: oklch(80% 0.1 60);
+  padding: 30px;
+}
+
+.grid {
+  display: grid;
+  padding: 0 20px;
+}
+
+.calc {
+  width: calc(100% - 120px);
+}
+
+.clamp {
+  width: clamp(250px, 50%, 500px);
+}
+
+.min {
+  width: min(50%, 500px);
+}
+.max {
+  width: max(300px, 50%);
+}
+
+.minmax {
+  grid-template-columns: minmax(300px, 500px);
+}
+
+.repeat {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.fit-content {
+  grid-template-columns: fit-content(100px) fit-content(200px) fit-content(
+      300px
+    );
+  gap: 20px;
+}
+
+:root {
+  --primary-color: oklch(0.8 0.2 50);
+  --secondary-color: oklch(0.8 0.2 200);
+  --triary-color: oklch(0.8 0.2 30);
+  --quaternary-color: oklch(0.8 0.2 150);
+}
+
+h4 {
+  color: var(--primary-color);
+}
+p {
+  color: var(--secondary-color);
+}
+.orange {
+  color: var(--triary-color);
+}
+span {
+  color: var(--quaternary-color);
+}

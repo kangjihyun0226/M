@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 800px;
+  margin-inline: auto;
+}
+.container {
+  background-color: oklch(0.9 0.05 200);
+  padding-inline: 20px;
+  margin-bottom: 40px;
+}
+.item {
+  border: 2px solid oklch(0.6 0.05 30);
+  background-color: oklch(0.9 0.05 30);
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+.dir {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+.h300 {
+  height: 300px;
+}
+
+.ac {
+  align-content: end;
+}
+
+.ai {
+  align-items: baseline;
+}
+
+.as-1 {
+  align-self: start;
+}
+.as-2 {
+  align-self: center;
+}
+.as-3 {
+  align-self: end;
+}
+.as-4 {
+  align-self: stretch;
+}
+.as-5 {
+  align-self: baseline;
+}
+.gap {
+  gap: 10px;
+}
+
+.jc {
+  justify-content: space-between;
+}
+
+.green {
+  background-color: oklch(71.692% 0.22202 144.937);
+}
+
+.grow-1 {
+  flex-grow: 1;
+}
+.grow-2 {
+  flex-grow: 2;
+}
+.shrink-3 {
+  width: 200px;
+  flex-shrink: 1;
+}
+.basis-4 {
+  flex-basis: 300px;
+}
+.basis-5 {
+  flex-basis: 0;
+}
