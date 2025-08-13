@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+h2 {
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+div {
+  color: white;
+}
+.grid {
+  display: grid;
+}
+
+.container {
+  background-color: black;
+  font-size: 18px;
+  padding-inline: 20px;
+}
+
+.item {
+  border: 2px solid white;
+  padding: 10px;
+}
+
+.gtc-1fr {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.gtr-1fr {
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.subgridD {
+  text-align: center;
+  grid-area: 1/2/2/7;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+}
+
+.subgridT {
+  text-align: right;
+  grid-area: 2/1/9/2;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+}
+
+.subgridC1 {
+  grid-area: 6/4/9/5;
+  background-color: var(--primary-color);
+  text-align: left;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+}
+
+.subgridC2 {
+  grid-area: 2/5/5/6;
+  background-color: var(--secondary-color);
+  text-align: left;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+}
+
+.subgridC3 {
+  grid-area: 6/5/9/6;
+  background-color: var(--triary-color);
+  text-align: left;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+}
+
+.subgridC4 {
+  grid-area: 2/6/5/7;
+  background-color: var(--quaternary-color);
+  text-align: left;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+}
+
+.subgridC5 {
+  grid-area: 6/6/9/7;
+  background-color: var(--five-color);
+  text-align: left;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+}
+
+:root {
+  --primary-color: oklch(0.8 0.2 50);
+  --secondary-color: oklch(0.8 0.2 200);
+  --triary-color: oklch(0.8 0.2 30);
+  --quaternary-color: oklch(0.8 0.2 150);
+  --five-color: oklch(0.8 0.2 300);
+}
