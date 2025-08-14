@@ -1,0 +1,88 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 50px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: none;
+  transition: background 0.2s, box-shadow 0.2s, transform 0.1s,
+    background-color 0.2s;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: oklch(0.65 0.3 250);
+}
+
+.primary:hover {
+  background-color: oklch(0.45 0.3 250);
+}
+
+.btn:disabled {
+  background-color: rgb(221, 221, 221);
+  cursor: not-allowed;
+}
+
+.secondary {
+  background-color: rgb(193, 193, 193);
+}
+
+.secondary:hover {
+  background-color: rgb(141, 141, 141);
+}
+
+.outline {
+  border: 2px solid oklch(0.5 0.25 250);
+  color: oklch(0.5 0.25 250);
+}
+
+.outline:hover {
+  background-color: oklch(0.5 0.25 250);
+  color: white;
+}
+
+.danger {
+  background-color: red;
+  color: white;
+}
+
+.danger:hover {
+  background-color: rgb(136, 6, 6);
+}
+
+.shadow {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.shadow:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.round {
+  border-radius: 50px;
+  background-color: rgb(161, 211, 255);
+}
+
+.round:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gradient {
+  background: linear-gradient(
+    90deg,
+    oklch(93.272% 0.03494 244.279),
+    oklch(0.5 0.25 250)
+  );
+}

@@ -1,0 +1,70 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.flow {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.box {
+  display: inline-flex;
+  width: 200px;
+  height: 200px;
+  background-color: oklch(0.65 0.1 250);
+}
+
+.relative {
+  position: relative;
+  background-color: blue;
+  top: 30px;
+  left: 30px;
+  z-index: -1;
+}
+
+.abs-wrap {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: antiquewhite;
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  background-color: blue;
+  top: 30px;
+  left: 30px;
+}
+
+.fixed-wrap {
+  background-color: antiquewhite;
+}
+
+.fixed {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 1;
+}
+
+.sticky-wrap {
+  position: relative;
+  background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 12px;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.sticky {
+  position: sticky;
+  top: 12px;
+  align-self: start;
+}
